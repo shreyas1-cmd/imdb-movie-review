@@ -3,4 +3,5 @@ pandas
 streamlit
 sklearn
 bs4
+re
 nltk
