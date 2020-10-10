@@ -2,3 +2,5 @@ numpy
 pandas
 streamlit
 sklearn
+bs4
+nltk
