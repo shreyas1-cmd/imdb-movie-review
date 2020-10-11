@@ -12,8 +12,6 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import numpy as np
-import urllib.request
-import csv
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 import re
@@ -21,11 +19,7 @@ from bs4 import BeautifulSoup
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import CountVectorizer
-#url = 'https://github.com/shreyas1-cmd/imdb-movie-review/blob/main/IMDB%20Dataset.csv'
-#ftpstream = urllib.request.urlopen(url)
-#csvfile = csv.reader(ftpstream.read().decode('utf-8'))  # with the appropriate encoding 
-#data = [row for row in csvfile]
-data = pd.read_csv('https://github.com/shreyas1-cmd/imdb-movie-review/blob/main/IMDB%20Dataset.csv')
+data = pd.read_csv('IMDB Dataset.csv')
 data_1 = data.iloc[:5000,:]
 def clean1(text):
   soup = BeautifulSoup(text,'html.parser')
