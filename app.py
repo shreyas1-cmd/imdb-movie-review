@@ -19,7 +19,8 @@ from bs4 import BeautifulSoup
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import CountVectorizer
-data = pd.read_csv('IMDB Dataset.csv')
+url = 'https://github.com/shreyas1-cmd/imdb-movie-review/blob/main/IMDB%20Dataset.csv'
+data = pd.read_csv(url,sep = ",")
 data_1 = data.iloc[:5000,:]
 def clean1(text):
   soup = BeautifulSoup(text,'html.parser')
