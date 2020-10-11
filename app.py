@@ -20,7 +20,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import CountVectorizer
 data = pd.read_csv('IMDB Dataset.csv')
-data_1 = data.iloc[:15000,:]
+data_1 = data.iloc[:5000,:]
 def clean1(text):
   soup = BeautifulSoup(text,'html.parser')
   a = soup.get_text()
