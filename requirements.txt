@@ -4,5 +4,5 @@ streamlit
 sklearn
 bs4
 nltk
-urllib
+urllib.request
 csv
