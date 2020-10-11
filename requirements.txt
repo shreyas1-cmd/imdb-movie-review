@@ -4,4 +4,4 @@ streamlit
 sklearn
 bs4
 nltk
-csv
+
